@@ -1,0 +1,7 @@
+server {
+        listen   80;
+        root /var/www/hello.world/public_html;
+        index index.html index.htm;
+        server_name hello.world www.hello.world;
+}
+
