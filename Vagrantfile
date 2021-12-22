@@ -13,7 +13,10 @@ Vagrant.configure("2") do |config|
         127.0.0.1 ex.py
         127.0.0.1 www.ex.py" >> /etc/hosts
   	    apt-get install -y nginx
-  	    apt-get install fcgiwrap
+  	    apt-get install -y nginx
+  	    apt-get install -y uwsgi
+        apt-get install -y uwsgi-plugin-python
+        apt-get install -y uwsgi-plugin-http
         mkdir -p /var/www/hello.world/public_html
         chown -R www-data:www-data /var/www/hello.world/public_html
         sudo chmod 755 /var/www
